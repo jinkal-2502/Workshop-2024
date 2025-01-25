@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #8360c3, #2ebf91);
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: #333;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .project-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            text-decoration: none;
+            color: #2ebf91;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #23a580;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="project-list">
+            <div class="project-item">
+                <a href="./day1/index.html" target="_blank">Day 1: Instageram Login</a>
+            </div>
+            <div class="project-item">
+                <a href="./day2/index.html" target="_blank">Day 2: AI Chatbot</a>
+            </div>
+            <div class="project-item">
+                <a href="./day3/Card Game/index.html" target="_blank">Day 3: Card Game</a>
+            </div>
+            <div class="project-item">
+                <a href="./day3/HangMan Game/index.html" target="_blank">Day 3: Hang Man</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
