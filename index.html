@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #8360c3, #2ebf91);
+            background-color: #212121;
             color: #fff;
         }
 
@@ -22,8 +22,7 @@
             background: #fff;
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            color: #333;
+            color: #212121;
             width: 80%;
             max-width: 600px;
         }
@@ -34,33 +33,38 @@
         }
 
         .project-list {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 20px;
         }
 
         .project-item {
+            width: 100% ;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background: #f9f9f9;
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
+            cursor: pointer;
         }
 
         .project-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         a {
             text-decoration: none;
-            color: #2ebf91;
+            color: crimson;
             font-weight: bold;
+            transition: all 0.3s ease;
         }
 
         a:hover {
-            color: #23a580;
+            color: #212121;
         }
     </style>
 </head>
@@ -69,16 +73,16 @@
         <h1>My Projects</h1>
         <div class="project-list">
             <div class="project-item">
-                <a href="./day1/index.html" target="_blank">Day 1: Instageram Login</a>
+                <a href="./Instagram/index.html" target="_blank">Day 1: Instagram</a>
             </div>
             <div class="project-item">
-                <a href="./day2/index.html" target="_blank">Day 2: AI Chatbot</a>
+                <a href="./Chatbot/index.html" target="_blank">Day 2: AI Chatbot</a>
             </div>
             <div class="project-item">
-                <a href="./day3/Card Game/index.html" target="_blank">Day 3: Card Game</a>
+                <a href="./Card Game/card-game.html" target="_blank">Day 3: Card Game</a>
             </div>
             <div class="project-item">
-                <a href="./day3/HangMan Game/index.html" target="_blank">Day 3: Hang Man</a>
+                <a href="" target="_blank">Day 3: Hang Man</a>
             </div>
         </div>
     </div>
