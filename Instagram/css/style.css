@@ -1,0 +1,126 @@
+/* General reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container that holds both sections */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+}
+
+/* Left section with mobile view */
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-view img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Right section with the login form */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Login Box */
+.login-box {
+    width: 350px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: #3897f0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Signup prompt */
+.signup-prompt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-prompt a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-section, .right-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+}
